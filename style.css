@@ -1,6 +1,47 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #222;
+    color: antiquewhite;
+}
+
+header{
+    padding: 2rem 1rem;
+    margin:0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1{
+    margin-bottom: 1rem;    
+}
+
+button{
+    border:none;
+}
+
+input{
+    border: none;
+}
+
+#add-new-task{
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+section{
+    padding:1.5rem 1rem;
+}
+
+.task{
+    display:flex;
+}
