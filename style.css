@@ -28,6 +28,10 @@ h2{
     margin-bottom: 1rem;
 }
 
+#new-task-form{
+    display: flex;
+}
+
 button{
     border:none;
 }
@@ -37,6 +41,7 @@ input{
 }
 
 #add-new-task{
+    flex: 1 1 0%;
     padding: 0.5rem 2rem;
     border-radius: 10px;
     margin-right: 1rem;
@@ -53,21 +58,49 @@ main{
     max-width: 800px;
     width: 100%;
     margin:0 auto;
+    flex: 1 1 0%;
 }
 
+#tasks {
+    /* display: flex; */
+    /* flex-direction: column; */
+   
+}
 
 #tasks .task{
-    display:flex;
+    /* display:flex; */
     justify-content: space-between;
-    background: rgba(165, 42, 42, 0.861);
+    
     padding: 12px;
     border-radius: 10px;
+    
 }
 
+.task .content {
+	flex: 1 1 0%;
+}
+
+
 .text{
-    background: rgba(165, 42, 42, 0.861);
     color: antiquewhite;
     font-size: 25px;
+    background: rgba(165, 42, 42, 0.861);
+    overflow: scroll;
+}
+
+.task .text .content{
+    display: block;
+}
+
+.new-task{
+    display: flex;
+    /* flex-direction: column; */
+    background: rgba(165, 42, 42, 0.861);
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    padding-left: 20px;
 }
 
 button{
@@ -75,4 +108,16 @@ button{
     font-size: 20px;
     font-weight: 200;
     border-radius: 45px;
+    cursor: pointer;
+    background-color:  	#FFDEAD;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.task .content .text:not(:read-only) {
+	color: black;
 }
